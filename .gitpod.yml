@@ -7,7 +7,9 @@ image:
 tasks:
   - name: node server
     init: npm install
-    command: npm run start
+    command: |
+      echo " Osama triggered this"
+      npm run start
   - name: echo echo
     command: echo "OSama DABEST InDa World"
 
