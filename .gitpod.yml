@@ -6,7 +6,9 @@ image:
 
 tasks:
   - name: node server
-    init: npm install
+    init: |
+      echo "trggiered init"
+      npm install
     command: |
       echo " Osama triggered this"
       npm run start
