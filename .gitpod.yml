@@ -9,5 +9,5 @@ tasks:
     init: npm install
     command: npm run start
   - name: echo echo
-    command: echo "OSama DABEST "
+    command: echo "OSama DABEST InDa World"
 
