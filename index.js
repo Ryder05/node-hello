@@ -1,6 +1,5 @@
 const http = require('http');
 const port = process.env.PORT || 3000;
-const log = require ('ololog')
 var colors = require('ansicolors');
 
 const server = http.createServer((req, res) => {
