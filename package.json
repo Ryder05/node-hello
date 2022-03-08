@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/johnpapa/node-hello#readme",
   "dependencies": {
+    "animated-emojis": "^1.0.1",
     "ansicolors": "^0.3.2",
+    "node-emoji": "^1.11.0",
     "nodemon": "^2.0.15",
     "ololog": "^1.1.175"
   }
