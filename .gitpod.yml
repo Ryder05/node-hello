@@ -8,7 +8,7 @@ tasks:
   - name: node server
     before : |
       echo "Osama Before"
-      mkdir osama
+      mkdir /workspace/osama 
     init: |
       echo "trggiered init"
       npm install
