@@ -25,5 +25,5 @@ console.log(colors.bgYellow('printed on yellow background'));
 console.log(colors.bgYellow(colors.blue('printed on yellow background in blue')));
 console.log(colors.blue(colors.bgYellow('printed on yellow background in blue')));
 
-  console.log(`Server running on http://localhost:${port}/`);
+  console.log(`Osama Server running on http://localhost:${port}/`);
 });
