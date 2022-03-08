@@ -5,9 +5,9 @@ image:
   file: .gitpod.dockerfile
 
 tasks:
-  - name: run node server
+  - name: node server
     init: npm install
     command: npm run start
   - name: echo echo
-    command: echo "OSama TAFFAR "
+    command: echo "OSama DABEST "
 
