@@ -6,8 +6,9 @@ image:
 
 tasks:
   - name: node server
-    before : 
+    before : |
       echo "Osama Before"
+      mkdir osama
     init: |
       echo "trggiered init"
       npm install
