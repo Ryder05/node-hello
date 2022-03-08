@@ -8,5 +8,6 @@ tasks:
   - name: run node server
     init: npm install
     command: npm run start
-
+  - name: echo echo
+    command: echo "OSama TAFFAR "
 
