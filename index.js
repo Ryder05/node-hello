@@ -26,9 +26,5 @@ console.log(colors.bgYellow('printed on yellow background'));
 // below two lines have same result (order in which bg and fg are combined doesn't matter)
 console.log(colors.bgYellow(colors.blue('printed on yellow background in blue')));
 console.log(colors.blue(colors.bgYellow('printed on yellow background in blue')));
-emoji.get('coffee') // returns the emoji code for coffee (displays emoji on terminals that support it)
-emoji.which(emoji.get('coffee')) // returns the string "coffee"
-emoji.get(':fast_forward:') // `.get` also supports github flavored markdown emoji (http://www.emoji-cheat-sheet.com/)
-
   console.log(`Server running on http://localhost:${port}/`);
 });

@@ -7,12 +7,12 @@ image:
 tasks:
   - name: node server
     before : |
-      echo "Osama luvs queen"
+      echo "Osama Launched this"
     init: |
-      echo "trggiered init"
+      echo "trggiered init By osama"
       npm install
     command: |
-      echo " Osama triggered this"
+      echo " Osama commznded you to do this"
       npm run start
   - name: echo echo
     command: echo "OSama DABEST InDa World"
