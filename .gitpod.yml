@@ -5,7 +5,8 @@ image:
   file: .gitpod.dockerfile
 
 tasks:
-  - init: npm install
+  - name: run node server
+    init: npm install
     command: npm run start
 
 
