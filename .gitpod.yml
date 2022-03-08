@@ -7,8 +7,7 @@ image:
 tasks:
   - name: node server
     before : |
-      echo "Osama Before"
-      mkdir /workspace/osama 
+      echo "Osama luvs queen"
     init: |
       echo "trggiered init"
       npm install
