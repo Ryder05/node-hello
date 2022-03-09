@@ -2,7 +2,7 @@ FROM gitpod/workspace-postgres
 USER root
 
 ARG MAVEN_VERSION=3.6.3
-RUN rm /bin/sh && ln -s /bin/bash /bin/sh
+SHELL ["/bin/bash", "-c"]
 
 RUN apt install unzip 
 RUN curl -s "https://get.sdkman.io" | bash 
