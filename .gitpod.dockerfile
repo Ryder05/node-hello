@@ -1,14 +1,9 @@
 FROM gitpod/workspace-postgres
+USER root
 
 ARG MAVEN_VERSION=3.6.3
-ARG USER_HOME_DIR="/root"
-ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/${MAVEN_VERSION}/binaries
-    
-USER root
-RUN mkdir -p /usr/share/maven /usr/share/maven/ref \
- && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz \
- && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1 \
- && rm -f /tmp/apache-maven.tar.gz \
- && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
+RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
-CMD ["mvn", "--version"]
+RUN apt install unzip 
+RUN curl -s "https://get.sdkman.io" | bash 
+RUN source ".sdkman/bin/sdkman-init.sh" &&  sdk install maven ${MAVEN_VERSION} && sdk use maven ${MAVEN_VERSION}
